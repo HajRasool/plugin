@@ -3,11 +3,11 @@ local function run(msg, matches)
   if res ~= 200 then return tdcli.sendMessage(msg.chat_id_, msg.id_, 1, '<b>No Connection</b>', 1, 'html') end
   local jdat = json:decode(url)
    if jdat.L == "0" then
-   jdat_L = 'ÎíÑ'
+   jdat_L = 'Ø®ÛŒØ±'
    elseif jdat.L == "1" then
-   jdat_L = 'Èáå'
+   jdat_L = 'Ø¨Ù„Ù‡'
    end
-  local text = '??ÓÇÚÊ : <code>'..jdat.Stime..'</code>\n\n??ÊÇÑíÎ : <code>'..jdat.FAdate..'</code>\n\n??ÊÚÏÇÏ ÑæÒ åÇí ãÇå ÌÇÑí : <code>'..jdat.t..'</code>\n\n??ÚÏÏ ÑæÒ ÏÑ åİÊå : <code>'..jdat.w..'</code>\n\n??ÔãÇÑå í Çíä åİÊå ÏÑ ÓÇá : <code>'..jdat.W..'</code>\n\n??äÇã ÈÇÓÊÇäí ãÇå : <code>'..jdat.p..'</code>\n\n?ÔãÇÑå í ãÇå ÇÒ ÓÇá : <code>'..jdat.n..'</code>\n\n??äÇã İÕá : <code>'..jdat.f..'</code>\n\n??ÔãÇÑå í İÕá ÇÒ ÓÇá : <code>'..jdat.b..'</code>\n\n??ÊÚÏÇÏ ÑæÒ åÇí ĞÔÊå ÇÒ ÓÇá : <code>'..jdat.z..'</code>\n\n??ÏÑ ÕÏ ĞÔÊå ÇÒ ÓÇá : <code>'..jdat.K..'</code>\n\n??ÊÚÏÇÏ ÑæÒ åÇí ÈÇŞíãÇäÏå ÇÒ ÓÇá : <code>'..jdat.Q..'</code>\n\n??ÏÑ ÕÏ ÈÇŞíãÇäÏå ÇÒ ÓÇá : <code>'..jdat.k..'</code>\n\n??äÇã ÍíæÇäí ÓÇá : <code>'..jdat.q..'</code>\n\n??ÔãÇÑå í ŞÑä åÌÑí ÔãÓí : <code>'..jdat.C..'</code>\n\n??ÓÇá ˜ÈíÓå : <code>'..jdat_L..'</code>\n\nãäØŞå í ÒãÇäí ÊäÙíã ÔÏå : <code>'..jdat.e..'</code>\n\n??ÇÎÊáÇİ ÓÇÚÊ ÌåÇäí : <code>'..jdat.P..'</code>\n\n??ÇÎÊáÇİ ÓÇÚÊ ÌåÇäí Èå ËÇäíå : <code>'..jdat.A..'</code>\n'
+  local text = 'âŒšï¸Ø³Ø§Ø¹Øª : <code>'..jdat.Stime..'</code>\n\nğŸ“†ØªØ§Ø±ÛŒØ® : <code>'..jdat.FAdate..'</code>\n\nğŸŒ™ØªØ¹Ø¯Ø§Ø¯ Ø±ÙˆØ² Ù‡Ø§ÛŒ Ù…Ø§Ù‡ Ø¬Ø§Ø±ÛŒ : <code>'..jdat.t..'</code>\n\nğŸ“Ø¹Ø¯Ø¯ Ø±ÙˆØ² Ø¯Ø± Ù‡ÙØªÙ‡ : <code>'..jdat.w..'</code>\n\nğŸ“Ø´Ù…Ø§Ø±Ù‡ ÛŒ Ø§ÛŒÙ† Ù‡ÙØªÙ‡ Ø¯Ø± Ø³Ø§Ù„ : <code>'..jdat.W..'</code>\n\nğŸ’ Ù†Ø§Ù… Ø¨Ø§Ø³ØªØ§Ù†ÛŒ Ù…Ø§Ù‡ : <code>'..jdat.p..'</code>\n\nâœ¨Ø´Ù…Ø§Ø±Ù‡ ÛŒ Ù…Ø§Ù‡ Ø§Ø² Ø³Ø§Ù„ : <code>'..jdat.n..'</code>\n\nğŸƒÙ†Ø§Ù… ÙØµÙ„ : <code>'..jdat.f..'</code>\n\nğŸ†Ø´Ù…Ø§Ø±Ù‡ ÛŒ ÙØµÙ„ Ø§Ø² Ø³Ø§Ù„ : <code>'..jdat.b..'</code>\n\nğŸ’«ØªØ¹Ø¯Ø§Ø¯ Ø±ÙˆØ² Ù‡Ø§ÛŒ Ú¯Ø°Ø´ØªÙ‡ Ø§Ø² Ø³Ø§Ù„ : <code>'..jdat.z..'</code>\n\nğŸ’«Ø¯Ø± ØµØ¯ Ú¯Ø°Ø´ØªÙ‡ Ø§Ø² Ø³Ø§Ù„ : <code>'..jdat.K..'</code>\n\nğŸ“ØªØ¹Ø¯Ø§Ø¯ Ø±ÙˆØ² Ù‡Ø§ÛŒ Ø¨Ø§Ù‚ÛŒÙ…Ø§Ù†Ø¯Ù‡ Ø§Ø² Ø³Ø§Ù„ : <code>'..jdat.Q..'</code>\n\nğŸ“Ø¯Ø± ØµØ¯ Ø¨Ø§Ù‚ÛŒÙ…Ø§Ù†Ø¯Ù‡ Ø§Ø² Ø³Ø§Ù„ : <code>'..jdat.k..'</code>\n\nğŸ’Ù†Ø§Ù… Ø­ÛŒÙˆØ§Ù†ÛŒ Ø³Ø§Ù„ : <code>'..jdat.q..'</code>\n\nğŸ“Ø´Ù…Ø§Ø±Ù‡ ÛŒ Ù‚Ø±Ù† Ù‡Ø¬Ø±ÛŒ Ø´Ù…Ø³ÛŒ : <code>'..jdat.C..'</code>\n\nğŸ’Ø³Ø§Ù„ Ú©Ø¨ÛŒØ³Ù‡ : <code>'..jdat_L..'</code>\n\nÙ…Ù†Ø·Ù‚Ù‡ ÛŒ Ø²Ù…Ø§Ù†ÛŒ ØªÙ†Ø¸ÛŒÙ… Ø´Ø¯Ù‡ : <code>'..jdat.e..'</code>\n\nğŸ’Ø§Ø®ØªÙ„Ø§Ù Ø³Ø§Ø¹Øª Ø¬Ù‡Ø§Ù†ÛŒ : <code>'..jdat.P..'</code>\n\nğŸ’Ø§Ø®ØªÙ„Ø§Ù Ø³Ø§Ø¹Øª Ø¬Ù‡Ø§Ù†ÛŒ Ø¨Ù‡ Ø«Ø§Ù†ÛŒÙ‡ : <code>'..jdat.A..'</code>\n'
   tdcli.sendMessage(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
 -- By @GODILOVEYOUME2
